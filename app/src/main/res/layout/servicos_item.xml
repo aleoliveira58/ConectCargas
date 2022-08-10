@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/txTituloServico"
+            android:id="@+id/ivFotoServico"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_conecta_carg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:civ_border_width="0dp"
+            app:civ_border_color="#FF000000"/>
+
+
+
+        <TextView
+            android:id="@+id/txTituloServico"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Logística Reversa"
+            android:textColor="#070707"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/txTextoServico"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivFotoServico"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txTextoServico"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Serviço de devolução e troca de mercadorias, com atendimento em todo o território nacional. Ideal para empresas que precisam de um retorno ágil de seus produtos"
+            app:layout_constraintTop_toBottomOf="@id/txTituloServico"
+            app:layout_constraintStart_toEndOf="@id/ivFotoServico"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
